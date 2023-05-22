@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Add\\Desktop\\SQLight\\WpfApp23\\WpfApp23.csproj": {}
+    "D:\\ДЗ_Шаг\\Windows Forms C#\\GitHub\\SQLight_WPF\\WpfApp23\\WpfApp23.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Add\\Desktop\\SQLight\\WpfApp23\\WpfApp23.csproj": {
+    "D:\\ДЗ_Шаг\\Windows Forms C#\\GitHub\\SQLight_WPF\\WpfApp23\\WpfApp23.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Add\\Desktop\\SQLight\\WpfApp23\\WpfApp23.csproj",
+        "projectUniqueName": "D:\\ДЗ_Шаг\\Windows Forms C#\\GitHub\\SQLight_WPF\\WpfApp23\\WpfApp23.csproj",
         "projectName": "WpfApp23",
-        "projectPath": "C:\\Users\\Add\\Desktop\\SQLight\\WpfApp23\\WpfApp23.csproj",
-        "packagesPath": "C:\\Users\\Add\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Add\\Desktop\\SQLight\\WpfApp23\\obj\\",
+        "projectPath": "D:\\ДЗ_Шаг\\Windows Forms C#\\GitHub\\SQLight_WPF\\WpfApp23\\WpfApp23.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\ДЗ_Шаг\\Windows Forms C#\\GitHub\\SQLight_WPF\\WpfApp23\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Add\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
