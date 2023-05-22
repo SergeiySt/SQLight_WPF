@@ -44,18 +44,27 @@ namespace WpfApp23
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            if (usersList.SelectedItem != null && TextBoxUser())
-            {
-                User? user = usersList.SelectedItem as User;
-                if(user != null)
-                {
-                    user.Name = textBoxName.Text;
-                    user.Age = int.Parse(textBoxAge.Text);
+            //if (usersList.SelectedItem != null && TextBoxUser())
+            //{
+            //    //User user = usersList.SelectedItem as User;
+            //    //if(user != null)
+            //    //{
+            //    //    user.Name = textBoxName.Text;
+            //    //    user.Age = int.Parse(textBoxAge.Text);
 
-                    db.SaveChanges();
-                    usersList.ItemsSource = db.Users.ToList();
-                    TextBoxClear();
-                }
+            //    //    db.SaveChanges();
+            //    //    UpdateUserList();
+            //    //    TextBoxClear();
+            //    //}
+            //}
+            if(usersList.SelectedItem is User user && TextBoxUser())
+            {
+                user.Name = textBoxName.Text;
+                user.Age = int.Parse(textBoxAge.Text);
+
+                db.SaveChanges();
+                UpdateUserList();
+                TextBoxClear();
             }
             else
             {
@@ -63,6 +72,10 @@ namespace WpfApp23
             }
         }
 
+        private void UpdateUserList()
+        {
+            usersList.ItemsSource = db.Users.ToList();
+        }
         private void TextBoxClear()
         {
             textBoxName.Text = "";
@@ -107,7 +120,7 @@ namespace WpfApp23
                 }
                 else
                 {
-
+                    // попередження
                 }
             }
         }
