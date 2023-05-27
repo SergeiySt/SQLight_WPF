@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -30,7 +31,19 @@ namespace WpfApp23
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if(string.IsNullOrEmpty(textBoxName.Text)
+                && int.TryParse(textBoxAge.Text, out int age))
+            {
+                MessageBox.Show("Заповніть всі поля", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+           
             DialogResult = true;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
