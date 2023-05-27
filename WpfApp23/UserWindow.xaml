@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp23"
         mc:Ignorable="d"
-        Title="UserWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="UserWindow" Height="292" Width="662" Icon="/user_add_12818.ico" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="Margin" Value="10"/>
@@ -30,17 +31,17 @@
         </Grid.ColumnDefinitions>
 
 
-        <TextBlock Text="Name"/>
-        <TextBlock Text="Age" Grid.Row="1"/>
+        <TextBlock Text="Name" FontSize="16"/>
+        <TextBlock Text="Age" Grid.Row="1" FontSize="16"/>
 
 
-        <TextBox Text="{Binding Name}" Grid.Column="1"/>
-        <TextBox Text="{Binding Age}" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="textBoxName" Text="{Binding Name}" Grid.Column="1" FontSize="16"/>
+        <TextBox x:Name="textBoxAge" Text="{Binding Age}" Grid.Column="1" Grid.Row="1" FontSize="16"/>
 
 
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
-            <Button IsDefault="True" Click="Button_Click" Height="60">Ok</Button>
-            <Button IsCancel="True"  Height="60">Отмена</Button>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="2" Grid.Column="1" Height="56" Margin="140,0,0,0" VerticalAlignment="Center">
+            <Button IsDefault="True" Click="Button_Click" Height="30" FontSize="16" Width="73">Ok</Button>
+            <Button IsCancel="True"  Height="32" FontSize="16" Width="76" Click="Button_Click_1">Отмена</Button>
         </StackPanel>
     </Grid>
 </Window>

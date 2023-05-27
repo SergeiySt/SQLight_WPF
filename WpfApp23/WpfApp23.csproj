@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="community_users_12977.ico" />
+    <None Remove="user_add_12818.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="community_users_12977.ico" />
+    <Resource Include="user_add_12818.ico" />
   </ItemGroup>
 
 </Project>

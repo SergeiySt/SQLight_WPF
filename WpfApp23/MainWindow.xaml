@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:WpfApp23"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="/community_users_12977.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <ListBox x:Name="usersList" ItemsSource="{Binding}" Margin="0,0,0,102" SelectionChanged="usersList_SelectionChanged">
+        <ListBox x:Name="usersList" ItemsSource="{Binding}" SelectionChanged="usersList_SelectionChanged" Height="282" VerticalAlignment="Top">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -23,14 +24,14 @@
 
             </ListBox.ItemTemplate>
         </ListBox>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Add" Margin="10" Click="Add_Click"/>
-            <Button Content="Edit" Margin="10" Click="Edit_Click"/>
-            <Button Content="Delite" Margin="10" Click="Delite_Click"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,343,0,0" Grid.RowSpan="2" Height="50" VerticalAlignment="Top">
+            <Button Content="Add" Margin="10" Click="Add_Click" FontSize="16" Width="52"/>
+            <Button Content="Edit" Margin="10" Click="Edit_Click" FontSize="16" Width="56"/>
+            <Button Content="Delite" Margin="10" Click="Delite_Click" FontSize="16" Width="65"/>
         </StackPanel>
-        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Margin="59,301,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <Label Content="Age:" HorizontalAlignment="Left" Margin="198,297,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxAge" HorizontalAlignment="Left" Margin="237,301,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="14,293,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Margin="75,297,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="324" FontSize="16"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="404,293,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxAge" Margin="451,297,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="16"/>
     </Grid>
 </Window>

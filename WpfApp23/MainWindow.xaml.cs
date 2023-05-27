@@ -97,6 +97,9 @@ namespace WpfApp23
             if (user is null) return;
             db.Users.Remove(user);
             db.SaveChanges();
+
+            UpdateUserList();
+            TextBoxClear();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
